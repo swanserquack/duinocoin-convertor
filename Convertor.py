@@ -64,6 +64,21 @@ if Option == '1':
         ID='solana'
         Convert(ID)
 
+    elif Currency.lower() in ('xrp', 'ripple'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=ripple&vs_currencies=usd')
+        ID='ripple'
+        Convert(ID)
+
+    elif Currency.lower() in ('dot', 'polkadot'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=polkadot&vs_currencies=usd')
+        ID='polkadot'
+        Convert(ID)
+
+    elif Currency.lower() in ('usdc', 'usd coin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd')
+        ID='usd-coin'
+        Convert(ID)
+
     
     else:
         print("Currency is not currently supported. Open an issue on github to get it added.")
@@ -116,6 +131,21 @@ if Option == '2':
     elif Currency.lower() in ('sol', 'solana'):
         response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd')
         ID='solana'
+        Convert(ID)
+
+    elif Currency.lower() in ('xrp', 'ripple'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=ripple&vs_currencies=usd')
+        ID='ripple'
+        Convert(ID)
+
+    elif Currency.lower() in ('dot', 'polkadot'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=polkadot&vs_currencies=usd')
+        ID='polkadot'
+        Convert(ID)
+
+    elif Currency.lower() in ('usdc', 'usd coin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd')
+        ID='usd-coin'
         Convert(ID)
     
     else:
