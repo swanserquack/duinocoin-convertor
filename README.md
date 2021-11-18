@@ -18,7 +18,7 @@ Any PR or issue's are welcome, feel free to contribute
 ```
 git clone https://github.com/swanserquack/duinocoin-convertor
 pip install -r requirements.txt
-python3 Convertor.py
+python3 Convertor.py or python Convertor.py
 ```
 
 ## Premade Binaries
@@ -26,5 +26,5 @@ Go to [the release page](https://github.com/swanserquack/duinocoin-convertor/rel
 Go into the folder in a command terminal and run:
 ```
 pip install -r requirements.txt
-python3 Convertor.py
+python3 Convertor.py or python Convertor.py
 ```
