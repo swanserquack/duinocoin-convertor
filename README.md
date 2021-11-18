@@ -10,3 +10,21 @@ Things To Add:
 * [ ] Add togglable warnings about which currencies cannot be directly converted to
 
 Any PR or issue's are welcome, feel free to contribute
+
+# Installation Instructions
+
+## Clone From Source
+
+```
+git clone https://github.com/swanserquack/duinocoin-convertor
+pip install -r requirements.txt
+python3 Convertor.py
+```
+
+## Premade Binaries
+Go to [the release page](https://github.com/swanserquack/duinocoin-convertor/releases) and download the files.
+Go into the folder in a command terminal and run:
+```
+pip install -r requirements.txt
+python3 Convertor.py
+```
