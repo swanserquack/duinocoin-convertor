@@ -79,6 +79,11 @@ if Option == '1':
         ID='usd-coin'
         Convert(ID)
 
+    elif Currency.lower() in ('doge', 'dogecoin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd')
+        ID= 'dogecoin'
+        Convert(ID)
+
     
     else:
         print("Currency is not currently supported. Open an issue on github to get it added.")
@@ -146,6 +151,11 @@ if Option == '2':
     elif Currency.lower() in ('usdc', 'usd coin'):
         response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd')
         ID='usd-coin'
+        Convert(ID)
+
+    elif Currency.lower() in ('doge', 'dogecoin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd')
+        ID= 'dogecoin'
         Convert(ID)
     
     else:
