@@ -81,7 +81,122 @@ if Option == '1':
 
     elif Currency.lower() in ('doge', 'dogecoin'):
         response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd')
-        ID= 'dogecoin'
+        ID='dogecoin'
+        Convert(ID)
+
+    elif Currency.lower() in ('bch', 'bitcoincash', 'bitcoin cash'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin-cash&vs_currencies=usd')
+        ID='bitcoin-cash'
+        Convert(ID)
+
+    elif Currency.lower() in ('etc', 'ethereumclassic', 'ethereum classic'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=ethereum-classic&vs_currencies=usd')
+        ID='ethereum-classic'
+        Convert(ID)
+
+    elif Currency.lower() in ('zec', 'zcash'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=zcash&vs_currencies=usd')
+        ID='zcash'
+        Convert(ID)
+
+    elif Currency.lower() in ('dash'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=dash&vs_currencies=usd')
+        ID='dash'
+        Convert(ID)
+
+    elif Currency.lower() in ('rvn', 'ravencoin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=ravencoin&vs_currencies=usd')
+        ID='ravencoin'
+        Convert(ID)
+
+    elif Currency.lower() in ('dgb', 'digibyte'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=digibyte&vs_currencies=usd')
+        ID='digibyte'
+        Convert(ID)
+
+    elif Currency.lower() in ('hnt', 'helium'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=helium&vs_currencies=usd')
+        ID='helium'
+        Convert(ID)
+
+    elif Currency.lower() in ('xch', 'chia'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=chia&vs_currencies=usd')
+        ID='chia'
+        Convert(ID)
+
+    elif Currency.lower() in ('fil', 'filecoin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=filecoin&vs_currencies=usd')
+        ID='filecoin'
+        Convert(ID)
+
+    elif Currency.lower() in ('storj'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=storj&vs_currencies=usd')
+        ID='storj'
+        Convert(ID)
+
+    elif Currency.lower() in ('xlm', 'stellar'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=stellar&vs_currencies=usd')
+        ID='stellar'
+        Convert(ID)
+
+    elif Currency.lower() in ('neo'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=neo&vs_currencies=usd')
+        ID='neo'
+        Convert(ID)
+
+    elif Currency.lower() in ('eos'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=eos&vs_currencies=usd')
+        ID='eos'
+        Convert(ID)
+
+    elif Currency.lower() in ('shib', 'shibainu', 'shiba inu'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=shiba-inu&vs_currencies=usd')
+        ID='shiba-inu'
+        Convert(ID)
+
+    elif Currency.lower() in ('trx', 'tron'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=tron&vs_currencies=usd')
+        ID='tron'
+        Convert(ID)
+
+    elif Currency.lower() in ('theta'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=theta-token&vs_currencies=usd')
+        ID='theta-token'
+        Convert(ID)
+
+    elif Currency.lower() in ('cake', 'pancakeswap', 'pancake swap'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=pancakeswap-token&vs_currencies=usd')
+        ID='pancakeswap-token'
+        Convert(ID)
+
+    elif Currency.lower() in ('bat', 'basicattentiontoken', 'basic attention token'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=basic-attention-token&vs_currencies=usd')
+        ID='basic-attention-token'
+        Convert(ID)
+
+    elif Currency.lower() in ('beam'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=beam&vs_currencies=usd')
+        ID='beam'
+        Convert(ID)
+
+    elif Currency.lower() in ('atom', 'cosmos'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=cosmos=&vs_currencies=usd')
+        ID='cosmos'
+        Convert(ID)
+
+    elif Currency.lower() in ('nexo'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=nexo&vs_currencies=usd')
+        ID='nexo'
+        Convert(ID)
+
+    elif Currency.lower() in ('enj', 'enjincoin', 'enjin coin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=enjincoin&vs_currencies=usd')
+        ID='enjincoin'
+        Convert(ID)
+
+    elif Currency.lower() in ('link', 'chainlink'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=chainlink&vs_currencies=usd')
+        ID='chainlink'
         Convert(ID)
 
     
@@ -155,8 +270,124 @@ if Option == '2':
 
     elif Currency.lower() in ('doge', 'dogecoin'):
         response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd')
-        ID= 'dogecoin'
+        ID='dogecoin'
         Convert(ID)
+
+    elif Currency.lower() in ('bch', 'bitcoincash', 'bitcoin cash'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin-cash&vs_currencies=usd')
+        ID='bitcoin-cash'
+        Convert(ID)
+
+    elif Currency.lower() in ('etc', 'ethereumclassic', 'ethereum classic'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=ethereum-classic&vs_currencies=usd')
+        ID='ethereum-classic'
+        Convert(ID)
+
+    elif Currency.lower() in ('zec', 'zcash'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=zcash&vs_currencies=usd')
+        ID='zcash'
+        Convert(ID)
+
+    elif Currency.lower() in ('dash'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=dash&vs_currencies=usd')
+        ID='dash'
+        Convert(ID)
+
+    elif Currency.lower() in ('rvn', 'ravencoin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=ravencoin&vs_currencies=usd')
+        ID='ravencoin'
+        Convert(ID)
+
+    elif Currency.lower() in ('dgb', 'digibyte'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=digibyte&vs_currencies=usd')
+        ID='digibyte'
+        Convert(ID)
+
+    elif Currency.lower() in ('hnt', 'helium'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=helium&vs_currencies=usd')
+        ID='helium'
+        Convert(ID)
+
+    elif Currency.lower() in ('xch', 'chia'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=chia&vs_currencies=usd')
+        ID='chia'
+        Convert(ID)
+
+    elif Currency.lower() in ('fil', 'filecoin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=filecoin&vs_currencies=usd')
+        ID='filecoin'
+        Convert(ID)
+
+    elif Currency.lower() in ('storj'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=storj&vs_currencies=usd')
+        ID='storj'
+        Convert(ID)
+
+    elif Currency.lower() in ('xlm', 'stellar'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=stellar&vs_currencies=usd')
+        ID='stellar'
+        Convert(ID)
+
+    elif Currency.lower() in ('neo'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=neo&vs_currencies=usd')
+        ID='neo'
+        Convert(ID)
+
+    elif Currency.lower() in ('eos'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=eos&vs_currencies=usd')
+        ID='eos'
+        Convert(ID)
+
+    elif Currency.lower() in ('shib', 'shibainu', 'shiba inu'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=shiba-inu&vs_currencies=usd')
+        ID='shiba-inu'
+        Convert(ID)
+
+    elif Currency.lower() in ('trx', 'tron'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=tron&vs_currencies=usd')
+        ID='tron'
+        Convert(ID)
+    
+    elif Currency.lower() in ('theta'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=theta-token&vs_currencies=usd')
+        ID='theta-token'
+        Convert(ID)
+
+    elif Currency.lower() in ('cake', 'pancakeswap', 'pancake swap'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=pancakeswap-token&vs_currencies=usd')
+        ID='pancakeswap-token'
+        Convert(ID)
+
+    elif Currency.lower() in ('bat', 'basicattentiontoken', 'basic attention token'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=basic-attention-token&vs_currencies=usd')
+        ID='basic-attention-token'
+        Convert(ID)
+
+    elif Currency.lower() in ('beam'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=beam&vs_currencies=usd')
+        ID='beam'
+        Convert(ID)
+
+    elif Currency.lower() in ('atom', 'cosmos'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=cosmos=&vs_currencies=usd')
+        ID='cosmos'
+        Convert(ID)
+
+    elif Currency.lower() in ('nexo'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=nexo&vs_currencies=usd')
+        ID='nexo'
+        Convert(ID)
+
+    elif Currency.lower() in ('enj', 'enjincoin', 'enjin coin'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=enjincoin&vs_currencies=usd')
+        ID='enjincoin'
+        Convert(ID)
+
+    elif Currency.lower() in ('link', 'chainlink'):
+        response = requests.get('https://api.coingecko.com/api/v3/simple/price?ids=chainlink&vs_currencies=usd')
+        ID='chainlink'
+        Convert(ID)
+
     
     else:
         print("Currency is not currently supported. Open an issue on github to get it added")
