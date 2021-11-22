@@ -3,8 +3,7 @@ import json
 import colorama
 import os
 from json import load
-from os import path
-from os import _exit, execl, mkdir
+from os import path, mkdir
 from pathlib import Path
 from colorama import init
 from colorama import Fore, Back, Style
@@ -13,16 +12,16 @@ init()
 Folder = 'Resources'
 
 if not path.exists(Folder):
-    mkdir(Folder)
+    mkdir(Folder)  #If the Resource folder does not exist then it creates it
 
-if not Path(Folder + "/values.json").is_file():
-    url = ("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/values.json")
+if not Path(Folder + "/values.json").is_file():   #If the values.json file does not exist then it creates it
+    url = ("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/values.json") #Grabs the values.json file from the github repository
     tempd = requests.get(url)
     with open(Folder + "/values.json", "wb") as f:
-        f.write(tempd.content)
+        f.write(tempd.content)  #Writes the values.json file
 
 with open(Folder + "/values.json", "r", encoding='utf-8') as values:
-    values = load(values)
+    values = load(values) #Loads it
 
 
 response_Duino = requests.get('https://server.duinocoin.com/statistics') #Grabs Data
