@@ -35,7 +35,6 @@ with open(Folder + "/values.json", "r", encoding='utf-8') as values:
 request = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Convertor.py")
 
 result = filecmp.cmp(f1, f2, shallow=False)
-print(result)
 
 if result == True:
     print('Version Up To Date')
@@ -43,7 +42,6 @@ if result == True:
 elif result == False:
     with open("Convertor.py", "wb") as f1:
         str(request.content)
-        print(request.content)
         f1.write(request.content)
         print('Update Complete')
         quit()
