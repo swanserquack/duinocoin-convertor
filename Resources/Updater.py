@@ -2,6 +2,7 @@ import requests
 import json
 import colorama
 import os
+import filecmp
 from json import load
 from os import path, mkdir
 from pathlib import Path
@@ -10,6 +11,8 @@ from colorama import Fore, Back, Style
 init()
 
 Folder = 'Resources'
+f1 = "Convertor.py"
+f2 = "Resources/Updater.py"
 
 if not path.exists(Folder):
     mkdir(Folder)  #If the Resource folder does not exist then it creates it
@@ -23,6 +26,25 @@ if not Path(Folder + "/values.json").is_file():   #If the values.json file does 
 with open(Folder + "/values.json", "r", encoding='utf-8') as values:
     values = load(values) #Loads it
 
+
+url = ("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Convertor.py")
+tempd = requests.get(url)
+with open(Folder + "/Updater.py", "wb") as f:
+    f.write(tempd.content)
+
+request = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Convertor.py")
+
+result = filecmp.cmp(f1, f2, shallow=False)
+
+if result == True:
+    print('Version Up To Date')
+
+elif result == False:
+    with open("Convertor.py", "wb") as f1:
+        str(request.content)
+        f1.write(request.content)
+        print('Update Complete')
+        quit()
 
 response_Duino = requests.get('https://server.duinocoin.com/statistics') #Grabs Data
 Duino_Output = response_Duino.text
