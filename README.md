@@ -5,7 +5,7 @@ This is a fan made project, it has no relation to the duino-coin team or the [ma
 Things To Add:
 * [ ] More currencies to convert to
 * [ ] Improve usability
-* [ ] Reduce Amount of elif statements
+* [x] Reduce Amount of elif statements
 * [ ] Overall Efficiency Changes
 * [ ] Add togglable warnings about which currencies cannot be directly converted to
 
