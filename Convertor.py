@@ -23,14 +23,14 @@ if not Path(Folder + "/values.json").is_file():   #If the values.json file does 
     with open(Folder + "/values.json", "wb") as f:
         f.write(tempd.content)  #Writes the values.json file
 
-url = ("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Convertor.py") #Grabs the values.json file from the github repository
-tempd = requests.get(url)
-with open(Folder + "/Updater.py", "wb") as f:
-    f.write(tempd.content)  #Writes the Convertors
-
 with open(Folder + "/values.json", "r", encoding='utf-8') as values:
     values = load(values) #Loads it
 
+
+url = ("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Convertor.py")
+tempd = requests.get(url)
+with open(Folder + "/Updater.py", "wb") as f:
+    f.write(tempd.content)
 
 request = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Convertor.py")
 
