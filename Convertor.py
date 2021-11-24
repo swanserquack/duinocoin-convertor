@@ -16,8 +16,7 @@ if not path.exists(Folder):
     mkdir(Folder)  #If the Resource folder does not exist then it creates it
 
 if not Path(Folder + "/values.json").is_file():   #If the values.json file does not exist then it creates it
-    url = ("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Resources/values.json") #Grabs the values.json file from the github repository
-    tempd = requests.get(url)
+    tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Resources/values.json")
     with open(Folder + "/values.json", "wb") as f:
         f.write(tempd.content)  #Writes the values.json file
 

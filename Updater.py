@@ -8,6 +8,7 @@ from pathlib import Path
 
 #Sets all the values we need
 Updater = 'Update Resources'
+Folder = 'Resources'
 json1 = 'Resources/values.json'
 json2 = 'Update Resources/values.json'
 python1 = 'Convertor.py'
@@ -15,6 +16,14 @@ python2 = 'Update Resources/Convertor.py'
 
 if not path.exists(Updater):
     mkdir(Updater)
+
+if not path.exists(Folder):
+    mkdir(Folder)
+
+if not Path(Folder + "/values.json").is_file():   #If the values.json file does not exist then it creates it
+    tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Resources/values.json")
+    with open(Folder + "/values.json", "wb") as f:
+        f.write(tempd.content)  #Writes the values.json file
 
 if not Path(Updater + "/values.json").is_file():   #If the values.json file does not exist then it creates it
     tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Resources/values.json")
