@@ -17,7 +17,7 @@ if not path.exists(Updater):
     mkdir(Updater)
 
 if not Path(Updater + "/values.json").is_file():   #If the values.json file does not exist then it creates it
-    tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/values.json")
+    tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Resources/values.json")
     with open(Updater + "/values.json", "wb") as f:
         f.write(tempd.content)  #Writes the values.json file
 
