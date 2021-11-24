@@ -8,9 +8,11 @@ Things To Add:
 * [x] Reduce Amount of elif statements
 * [ ] Overall Efficiency Changes
 * [ ] Add togglable warnings about which currencies cannot be directly converted to
-* [ ] Add an updater for the files
+* [x] Add an updater for the files
 
 Any PR or issue's are welcome, feel free to contribute
+
+When you want to update, run the Updater.py to automaticlly update the files.
 
 # Installation Instructions
 
