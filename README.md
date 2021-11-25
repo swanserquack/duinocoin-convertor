@@ -1,10 +1,10 @@
 # Duinocoin-Convertor
 
-This is a fan made project, it has no relation to the duino-coin team or the [main repository](https://github.com/revoxhere/duino-coin). This program is a simple program which converts to and from duino-coin. The prices are grabbed from coingecko's api.
+This is a fan made project, it has no relation to the duino-coin team or the [main repository](https://github.com/revoxhere/duino-coin). This program is a simple program which converts to and from duino-coin, using the prices from the [coingecko api](https://www.coingecko.com/en/api/documentation).
 
-Any PR or issue's are welcome, feel free to contribute
+Any PR or issue's are welcome, feel free to contribute.
 
-When you want to update, run the Updater.py to automaticlly update the files.
+When you want to update, run the Updater.py to automatically update the files.
 
 # Installation Instructions
 
