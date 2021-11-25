@@ -1,13 +1,14 @@
 # Duinocoin-Convertor
 
-This is a fan made project, it has no relation to the duino-coin team or the [main repository](https://github.com/revoxhere/duino-coin). This program is a simple program which converts to and from duino-coin. The prices are grabbed from coingecko's api. There are some currencies which are listed on the duino-coin exchange but I will not use their prices due to complexity.
+This is a fan made project, it has no relation to the duino-coin team or the [main repository](https://github.com/revoxhere/duino-coin). This program is a simple program which converts to and from duino-coin. The prices are grabbed from coingecko's api.
 
 Things To Add:
 * [ ] More currencies to convert to
-* [ ] Improve usability
+* [x] Improve usability
 * [x] Reduce Amount of elif statements
 * [ ] Overall Efficiency Changes
 * [x] Add an updater for the files
+* [ ] Add multiple use for execution
 
 Any PR or issue's are welcome, feel free to contribute
 
