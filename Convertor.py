@@ -72,25 +72,14 @@ def CalculationTo(ID):
     DuinoAmount=float(input("How many Duino-Coins do you have?"))
     DuinoTotal=DuinoPrice*DuinoAmount
     FinalOutput = float(DuinoTotal/float(Convert.Price)) #Floats the CurrencyPrice variable (Due to it being a string on the output) and floats the overall thing.
-    direct = option['direct']
-    if direct == 'no':
-        print(Fore.RED + "Warning: You cannot directly convert to this currency" + Style.RESET_ALL)
-        print('You would have', FinalOutput ,'amount of', ID)
-    elif direct == 'yes':
-        print(Fore.GREEN + "You can directly convert to this currency" + Style.RESET_ALL)
-        print('You would have', FinalOutput ,'amount of', ID)
+    print('You would have', FinalOutput ,'amount of', ID)
+        
 
 def CalculationFrom():
     CoinAmount=float(input("How many coins do you have?"))
     CoinTotal=float(Convert.Price)*CoinAmount
     FinalOutput = float(CoinTotal/DuinoPrice) #Floats the CoinTotal, Divides the CoinTotal by the DuinoPrice and floats it.
-    direct = option['direct']
-    if direct == 'no':
-        print(Fore.RED + "Warning: You cannot directly convert from this currency" + Style.RESET_ALL)
-        print('You would have', FinalOutput, 'duino-coin')
-    elif direct == 'yes':
-        print(Fore.GREEN + "You can directly convert from this currency" + Style.RESET_ALL)
-        print('You would have', FinalOutput, 'duino-coin')
+    print('You would have', FinalOutput, 'duino-coin')
 
 def NoSupport():
     print("Currency is not currently supported. Open an issue on github to get it added.")
