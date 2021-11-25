@@ -224,6 +224,36 @@
             "names": ["qtum"],
             "id": "qtum",
             "url": "https://api.coingecko.com/api/v3/simple/price?ids=qtum&vs_currencies=usd"
+        },
+        {
+            "names": ["req", "request"],
+            "id": "request-network",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=request-network&vs_currencies=usd"
+        },
+        {
+            "names": ["snt", "status"],
+            "id": "status",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=status&vs_currencies=usd"
+        },
+        {
+            "names": ["xtz", "tezos"],
+            "id": "tezos",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=tezos&vs_currencies=usd"
+        },
+        {
+            "names": ["uni", "uniswap"],
+            "id": "uniswap",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=uniswap&vs_currencies=usd"
+        },
+        {
+            "names": ["waves"],
+            "id": "waves",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=waves&vs_currencies=usd"
+        },
+        {
+            "names": ["wbtc", "wrappedbitcoin", "wrapped bitcoin"],
+            "id": "wrapped-bitcoin",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=wrapped-bitcoin&vs_currencies=usd"
         }
     ]
 }
