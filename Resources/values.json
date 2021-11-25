@@ -3,227 +3,272 @@
         {
             "names": ["btc", "bitcoin"],
             "id": "bitcoin",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["bnb", "binancecoin"],
             "id": "binancecoin",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=binancecoin&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["ada", "cardano"],
             "id": "cardano",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=cardano&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=cardano&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["eth", "ethereum"],
             "id": "ethereum",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["ltc", "litecoin"],
             "id": "litecoin",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=litecoin&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=litecoin&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["xmr", "monero"],
             "id": "monero",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=monero&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["usdt", "tether"],
             "id": "tether",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=tether&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["sol", "solana"],
             "id": "solana",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=solana&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["xrp", "ripple"],
             "id": "ripple",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=ripple&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=ripple&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["dot", "polkadot"],
             "id": "polkadot",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=polkadot&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=polkadot&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["usdc", "usd coin"],
             "id": "usd-coin",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=usd-coin&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["doge", "dogecoin"],
             "id": "dogecoin",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=dogecoin&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["bch", "bitcoincash", "bitcoin cash"],
             "id": "bitcoin-cash",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin-cash&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin-cash&vs_currencies=usd",
+            "direct": "yes"
         },
         {
             "names": ["etc", "ethereumclassic", "ethereum classic"],
             "id": "ethereum-classic",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum-classic&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=ethereum-classic&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["zec","zcash"],
             "id": "zcash",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=zcash&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=zcash&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["dash"],
             "id": "dash",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=dash&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=dash&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["rvn", "ravencoin"],
             "id": "ravencoin",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=ravencoin&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=ravencoin&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["dgb", "digibyte"],
             "id": "digibyte",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=digibyte&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=digibyte&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["hnt", "helium"],
             "id": "helium",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=helium&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=helium&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["xch", "chia"],
             "id": "chia",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=chia&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=chia&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["fil", "filecoin"],
             "id": "filecoin",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=filecoin&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=filecoin&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["storj"],
             "id": "storj",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=storj&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=storj&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["xlm", "stellar"],
             "id": "stellar",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=stellar&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=stellar&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["neo"],
             "id": "neo",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=neo&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=neo&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["eos"],
             "id": "eos",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=eos&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=eos&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["shib", "shibainu", "shiba inu"],
             "id": "shiba-inu",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=shiba-inu&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=shiba-inu&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["trx", "tron"],
             "id": "tron",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=tron&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=tron&vs_currencies=usd",
+            "direct": "yes"
         },
         {
             "names": ["theta"],
             "id": "theta-token",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=theta-token&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=theta-token&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["cake", "pancakeswap", "pancake swap"],
             "id": "pancakeswap-token",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=pancakeswap-token&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=pancakeswap-token&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["bat", "basicattentiontoken", "basic attention token"],
             "id": "basic-attention-token",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=basic-attention-token&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=basic-attention-token&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["beam"],
             "id": "beam",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=beam&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=beam&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["atom", "cosmos"],
             "id": "cosmos",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=cosmos=&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=cosmos=&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["nexo"],
             "id": "nexo",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=nexo&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=nexo&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["enj", "enjincoin", "enjin coin"],
             "id": "enjincoin",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=enjincoin&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=enjincoin&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["link", "chainlink"],
             "id": "chainlink",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=chainlink&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=chainlink&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["aave"],
             "id": "aave",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=aave&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=aave&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["btg", "bitcoingold", "bitcoin gold"],
             "id": "bitcoin-gold",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin-gold&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin-gold&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["btt", "bittorrent"],
             "id": "bittorrent-2",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=bittorrent-2&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=bittorrent-2&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["chiliz", "chz"],
             "id": "chiliz",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=chiliz&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=chiliz&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["cnd", "cindicator"],
             "id": "cindicator",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=cindicator&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=cindicator&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["comp", "compound"],
             "id": "compound-governance-token",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=compound-governance-token&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=compound-governance-token&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["cro", "crypto.com coin", "crypto.comcoin"],
             "id": "crypto-com-chain",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=crypto-com-chain&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=crypto-com-chain&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["dai"],
             "id": "dai",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=dai&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=dai&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["hot", "holo"],
             "id": "holotoken",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=holotoken&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=holotoken&vs_currencies=usd",
+            "direct": "no"
         },
         {
             "names": ["qtum"],
             "id": "qtum",
-            "url": "https://api.coingecko.com/api/v3/simple/price?ids=qtum&vs_currencies=usd"
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=qtum&vs_currencies=usd",
+            "direct": "no"
         }
     ]
 }
