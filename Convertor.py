@@ -72,53 +72,52 @@ def CalculationTo(ID):
     DuinoAmount=float(input("How many Duino-Coins do you have?"))
     DuinoTotal=DuinoPrice*DuinoAmount
     FinalOutput = float(DuinoTotal/float(Convert.Price)) #Floats the CurrencyPrice variable (Due to it being a string on the output) and floats the overall thing.
-    print('You would have', FinalOutput ,'amount of', ID)
+    print('You would have', FinalOutput ,'amount of', ID, '\n')
         
 
 def CalculationFrom():
     CoinAmount=float(input("How many coins do you have?"))
     CoinTotal=float(Convert.Price)*CoinAmount
     FinalOutput = float(CoinTotal/DuinoPrice) #Floats the CoinTotal, Divides the CoinTotal by the DuinoPrice and floats it.
-    print('You would have', FinalOutput, 'duino-coin')
+    print('You would have', FinalOutput, 'duino-coin\n')
 
 def NoSupport():
     print("Currency is not currently supported. Open an issue on github to get it added.")
     quit()
 
-print(Fore.YELLOW + 'Duino Coin Convertor')
-print('')
-Option = input(Style.RESET_ALL + Fore.CYAN + '1 - Convert from Duino-Coin\n' + Style.RESET_ALL + Fore.GREEN + '2 - Convert to Duino-Coin\n' + Style.RESET_ALL + Fore.MAGENTA + '3 - Quit\n' + Style.RESET_ALL)
 
-if Option == '1':
+while True:
+    print(Fore.YELLOW + 'Duino Coin Convertor')
+    print('')
+    Option = input(Style.RESET_ALL + Fore.CYAN + '1 - Convert from Duino-Coin\n' + Style.RESET_ALL + Fore.GREEN + '2 - Convert to Duino-Coin\n' + Style.RESET_ALL + Fore.MAGENTA + '3 - Quit\n' + Style.RESET_ALL)
 
-    Currency=input("What currency do you want to convert to?")
+    if Option == '1':
+        Currency=input("What currency do you want to convert to?")
 
-    for option in values["currency_options"]:
-        if Currency.lower() in option['names']:
-            ID = option['id']
-            URL = option['url']
-            response = requests.get(URL)
-            Convert(ID)
-            CalculationTo(ID)
-            break
-    else:
-        NoSupport()
+        for option in values["currency_options"]:
+            if Currency.lower() in option['names']:
+                ID = option['id']
+                URL = option['url']
+                response = requests.get(URL)
+                Convert(ID)
+                CalculationTo(ID)
+                break  
+        else:
+            NoSupport()
 
-elif Option == '2':
-
-    Currency=input("What currency do you want to convert from?")
-
-    for option in values["currency_options"]:
-        if Currency.lower() in option['names']:
-            ID = option['id']
-            URL = option['url']
-            response = requests.get(URL)
-            Convert(ID)
-            CalculationFrom()
-            break
+    elif Option == '2':
+        Currency=input("What currency do you want to convert from?")
         
-    else:
-        NoSupport()
-
-elif Option == '3':
-    quit()
+        for option in values["currency_options"]:
+            if Currency.lower() in option['names']:
+                ID = option['id']
+                URL = option['url']
+                response = requests.get(URL)
+                Convert(ID)
+                CalculationFrom()
+                break
+        else:
+            NoSupport()
+            
+    elif Option == '3':
+        quit()
