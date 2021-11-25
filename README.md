@@ -6,9 +6,9 @@ Things To Add:
 * [ ] More currencies to convert to
 * [x] Improve usability
 * [x] Reduce Amount of elif statements
-* [ ] Overall Efficiency Changes
+* [x] Overall Efficiency Changes
 * [x] Add an updater for the files
-* [ ] Add multiple use for execution
+* [x] Add multiple use for execution
 
 Any PR or issue's are welcome, feel free to contribute
 
