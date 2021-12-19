@@ -25,4 +25,3 @@ pip install -r requirements.txt
 python3 Updater.py or python Updater.py
 python3 Convertor.py or python Convertor.py
 ```
----
