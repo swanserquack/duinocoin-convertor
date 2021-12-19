@@ -26,11 +26,3 @@ python3 Updater.py or python Updater.py
 python3 Convertor.py or python Convertor.py
 ```
 ---
-
-Things To Add:
-* [x] More currencies to convert to
-* [x] Improve usability
-* [x] Reduce Amount of elif statements
-* [x] Overall Efficiency Changes
-* [x] Add an updater for the files
-* [x] Add multiple use for execution
