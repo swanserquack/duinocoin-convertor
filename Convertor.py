@@ -82,8 +82,7 @@ def CalculationFrom():
     print('You would have', FinalOutput, 'duino-coin\n')
 
 def NoSupport():
-    print("Currency is not currently supported. Open an issue on github to get it added.")
-    quit()
+    print("Currency is not currently supported, open an issue to get it added.")
 
 
 while True:

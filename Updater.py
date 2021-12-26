@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+##########################################
+# Duino-Coin Convertor
+# https://github.com/swanserquack/duinocoin-convertor
+# No copyright
+##########################################
+
 import requests
 import os
 import time
