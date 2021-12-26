@@ -20,6 +20,8 @@ json1 = 'Resources/values.json'
 json2 = 'Update Resources/values.json'
 python1 = 'Convertor.py'
 python2 = 'Update Resources/Convertor.py'
+req1 = 'requirements.txt'
+req2 = 'Update Resources/requirements.txt'
 
 if not path.exists(Updater):
     mkdir(Updater)
@@ -32,18 +34,27 @@ if not Path(Folder + "/values.json").is_file():   #If the values.json file does 
     with open(Folder + "/values.json", "wb") as f:
         f.write(tempd.content)  #Writes the values.json file
 
-if not Path(Updater + "/values.json").is_file():   #If the values.json file does not exist then it creates it
+#Grabs the update files fromt the repository
+
+if not Path(Updater + "/values.json").is_file():
     tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Resources/values.json")
     with open(Updater + "/values.json", "wb") as f:
-        f.write(tempd.content)  #Writes the values.json file
+        f.write(tempd.content)
 
-if not Path(Updater + "/Convertor.py").is_file(): #Same here as above
+if not Path(Updater + "/Convertor.py").is_file():
     tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Convertor.py")
     with open(Updater + "/Convertor.py", "wb") as f:
         f.write(tempd.content)
 
+if not Path(Updater + "/requirements.txt").is_file():
+    tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/requirements.txt")
+    with open(Updater + "/requirements.txt", "wb") as f:
+        f.write(tempd.content)
+
+#Checks for differences
 pyresult = filecmp.cmp(python1, python2, shallow=False)
 jsonresult = filecmp.cmp(json1, json2, shallow=False)
+reqresult = filecmp.cmp(req1, req2, shallow=False)
 
 if jsonresult == False:
     print('Json file is not up to date, updating now...')
@@ -65,8 +76,18 @@ if pyresult == False:
     print('Update complete')
     pyresult = filecmp.cmp(python1, python2, shallow=False)
 
+if reqresult == False:
+    print('Requirements file is not up to date, updating now...')
+    uf = open(req2, "rb")
+    of = open(req1, "wb")
+    of.write(uf.read())
+    uf.close()
+    of.close()
+    print('Update complete')
+    reqresult = filecmp.cmp(req1, req2, shallow=False)
 
-if pyresult == True and jsonresult == True:  #After the recheck they both become true and this is run
+
+if pyresult == True and jsonresult == True and reqresult == True:  #After the recheck they all are True and the update is complete
     print('Files are up to date, closing in 10 seconds')
     shutil.rmtree(Updater)
     time.sleep(10)
