@@ -254,6 +254,61 @@
             "names": ["wbtc", "wrappedbitcoin", "wrapped bitcoin"],
             "id": "wrapped-bitcoin",
             "url": "https://api.coingecko.com/api/v3/simple/price?ids=wrapped-bitcoin&vs_currencies=usd"
+        },
+        {
+            "names": ["terra", "luna"],
+            "id": "terra-luna",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=terra-luna&vs_currencies=usd"
+        },
+        {
+            "names": ["polygon", "matic"],
+            "id": "matic-network",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=matic-network&vs_currencies=usd"
+        },
+        {
+            "names": ["algorand", "algo"],
+            "id": "algorand",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=algorand&vs_currencies=usd"
+        },
+        {
+            "names": ["near", "near protocol"],
+            "id": "near",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=near&vs_currencies=usd"
+        },
+        {
+            "names": ["axs", "axie infinity", "axieinfinity"],
+            "id": "axie-infinity",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=axie-infinity&vs_currencies=usd"
+        },
+        {
+            "names": ["vechain", "vet"],
+            "id": "vechain",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=vechain&vs_currencies=usd"
+        },
+        {
+            "names": ["internet computer", "internetcomputer", "icp"],
+            "id": "internet-computer",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=internet-computer&vs_currencies=usd"
+        },
+        {
+            "names": ["gala"],
+            "id": "gala",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=gala&vs_currencies=usd"
+        },
+        {
+            "names": ["the graph", "thegraph", "grt"],
+            "id": "the-graph",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=the-graph&vs_currencies=usd"
+        },
+        {
+            "names": ["flow"],
+            "id": "flow",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=flow&vs_currencies=usd"
+        },
+        {
+            "names": ["loopring", "lrc"],
+            "id": "loopring",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=loopring&vs_currencies=usd"
         }
     ]
 }
