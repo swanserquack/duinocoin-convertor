@@ -309,6 +309,21 @@
             "names": ["loopring", "lrc"],
             "id": "loopring",
             "url": "https://api.coingecko.com/api/v3/simple/price?ids=loopring&vs_currencies=usd"
+        },
+        {
+            "names": ["maker", "mkr"],
+            "id": "maker",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=maker&vs_currencies=usd"
+        },
+        {
+            "names": ["amp"],
+            "id": "amp-token",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=amp-token&vs_currencies=usd"
+        },
+        {
+            "names": ["stacks", "stx"],
+            "id": "blockstack",
+            "url": "https://api.coingecko.com/api/v3/simple/price?ids=blockstack&vs_currencies=usd"
         }
     ]
 }
