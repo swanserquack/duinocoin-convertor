@@ -22,6 +22,8 @@ python1 = 'Convertor.py'
 python2 = 'Update Resources/Convertor.py'
 req1 = 'requirements.txt'
 req2 = 'Update Resources/requirements.txt'
+Complete = 'Update Complete'
+values = "/values.json"
 
 if not path.exists(Updater):
     mkdir(Updater)
@@ -29,16 +31,16 @@ if not path.exists(Updater):
 if not path.exists(Folder):
     mkdir(Folder)
 
-if not Path(Folder + "/values.json").is_file():   #If the values.json file does not exist then it creates it
+if not Path(Folder + values).is_file():   #If the values.json file does not exist then it creates it
     tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Resources/values.json")
-    with open(Folder + "/values.json", "wb") as f:
+    with open(Folder + values, "wb") as f:
         f.write(tempd.content)  #Writes the values.json file
 
 #Grabs the update files fromt the repository
 
-if not Path(Updater + "/values.json").is_file():
+if not Path(Updater + values).is_file():
     tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Resources/values.json")
-    with open(Updater + "/values.json", "wb") as f:
+    with open(Updater + values, "wb") as f:
         f.write(tempd.content)
 
 if not Path(Updater + "/Convertor.py").is_file():
@@ -63,7 +65,7 @@ if jsonresult == False:
     tf.write(sf.read())
     sf.close()
     tf.close()
-    print('Update complete')
+    print(Complete)
     jsonresult = filecmp.cmp(json1, json2, shallow=False) #Recheck to make sure the update completed and jsonresult is set to true
 
 if pyresult == False:
@@ -73,7 +75,7 @@ if pyresult == False:
     kf.write(pf.read())
     pf.close()
     kf.close()
-    print('Update complete')
+    print(Complete)
     pyresult = filecmp.cmp(python1, python2, shallow=False)
 
 if reqresult == False:
@@ -83,7 +85,7 @@ if reqresult == False:
     of.write(uf.read())
     uf.close()
     of.close()
-    print('Update complete')
+    print(Complete)
     reqresult = filecmp.cmp(req1, req2, shallow=False)
 
 

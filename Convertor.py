@@ -21,6 +21,7 @@ Folder = 'Resources'
 Updater = 'Update Resources'
 Updater1 = 'Update Resources/Updater.py'
 Updater2 = 'Updater.py'
+values = "/values.json"
 
 
 if not path.exists(Updater):
@@ -47,12 +48,12 @@ if updateresult == True:
 if not path.exists(Folder):
     mkdir(Folder)  #If the Resource folder does not exist then it creates it
 
-if not Path(Folder + "/values.json").is_file():   #If the values.json file does not exist then it creates it
+if not Path(Folder + values).is_file():   #If the values.json file does not exist then it creates it
     tempd = requests.get("https://raw.githubusercontent.com/swanserquack/duinocoin-convertor/main/Resources/values.json")
-    with open(Folder + "/values.json", "wb") as f:
+    with open(Folder + values, "wb") as f:
         f.write(tempd.content)  #Writes the values.json file
 
-with open(Folder + "/values.json", "r", encoding='utf-8') as values:
+with open(Folder + values, "r", encoding='utf-8') as values:
     values = ujson.load(values) #Loads it
 
 
