@@ -63,24 +63,24 @@ parse_json = ujson.loads(Duino_Output) #Turns the API output into a python dicti
 DuinoPrice = parse_json['Duco price'] #Searches the dictionary for Duco price and sets DuinoPrice to the value
 
 
-def convert(ID):
-    Output = response.text
-    parse_json = ujson.loads(Output) #Turns the API output into a python dictionary and then sets it as the variable parse_json
-    convert.Price = parse_json[ID]['usd'] #Goes through the ID variable then the usd to get the price
+def convert(id):
+    output = response.text
+    parse_json = ujson.loads(output) #Turns the API output into a python dictionary and then sets it as the variable parse_json
+    convert.Price = parse_json[id]['usd'] #Goes through the ID variable then the usd to get the price
     return convert.Price
 
-def calculationto(ID):
-    DuinoAmount=float(input("How many Duino-Coins do you have?"))
-    DuinoTotal=DuinoPrice*DuinoAmount
-    FinalOutput = float(DuinoTotal/float(convert.Price)) #Floats the CurrencyPrice variable (Due to it being a string on the output) and floats the overall thing.
-    print('You would have', FinalOutput ,'amount of', ID, '\n')
+def calculationto(id):
+    duinoamount=float(input("How many Duino-Coins do you have?"))
+    duinototal=DuinoPrice*duinoamount
+    finaloutput = float(duinototal/float(convert.Price)) #Floats the CurrencyPrice variable (Due to it being a string on the output) and floats the overall thing.
+    print('You would have', finaloutput ,'amount of', id, '\n')
         
 
 def calculationfrom():
-    CoinAmount=float(input("How many coins do you have?"))
-    CoinTotal=float(convert.Price)*CoinAmount
-    FinalOutput = float(CoinTotal/DuinoPrice) #Floats the CoinTotal, Divides the CoinTotal by the DuinoPrice and floats it.
-    print('You would have', FinalOutput, 'duino-coin\n')
+    coinamount=float(input("How many coins do you have?"))
+    cointotal=float(convert.Price)*coinamount
+    finaloutput = float(cointotal/DuinoPrice) #Floats the CoinTotal, Divides the CoinTotal by the DuinoPrice and floats it.
+    print('You would have', finaloutput, 'duino-coin\n')
 
 def nosupport():
     print("Currency is not currently supported, open an issue to get it added.")
@@ -96,11 +96,11 @@ while True:
 
         for option in values["currency_options"]:
             if Currency.lower() in option['names']:
-                ID = option['id']
+                id = option['id']
                 URL = option['url']
                 response = requests.get(URL)
-                convert(ID)
-                calculationto(ID)
+                convert(id)
+                calculationto(id)
                 break  
         else:
             nosupport()
@@ -110,10 +110,10 @@ while True:
         
         for option in values["currency_options"]:
             if Currency.lower() in option['names']:
-                ID = option['id']
+                id = option['id']
                 URL = option['url']
                 response = requests.get(URL)
-                convert(ID)
+                convert(id)
                 calculationfrom()
                 break
         else:
