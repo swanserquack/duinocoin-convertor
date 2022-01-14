@@ -63,26 +63,26 @@ parse_json = ujson.loads(Duino_Output) #Turns the API output into a python dicti
 DuinoPrice = parse_json['Duco price'] #Searches the dictionary for Duco price and sets DuinoPrice to the value
 
 
-def Convert(ID):
+def convert(ID):
     Output = response.text
     parse_json = ujson.loads(Output) #Turns the API output into a python dictionary and then sets it as the variable parse_json
-    Convert.Price = parse_json[ID]['usd'] #Goes through the ID variable then the usd to get the price
-    return Convert.Price
+    convert.Price = parse_json[ID]['usd'] #Goes through the ID variable then the usd to get the price
+    return convert.Price
 
-def CalculationTo(ID):
+def calculationto(ID):
     DuinoAmount=float(input("How many Duino-Coins do you have?"))
     DuinoTotal=DuinoPrice*DuinoAmount
-    FinalOutput = float(DuinoTotal/float(Convert.Price)) #Floats the CurrencyPrice variable (Due to it being a string on the output) and floats the overall thing.
+    FinalOutput = float(DuinoTotal/float(convert.Price)) #Floats the CurrencyPrice variable (Due to it being a string on the output) and floats the overall thing.
     print('You would have', FinalOutput ,'amount of', ID, '\n')
         
 
-def CalculationFrom():
+def calculationfrom():
     CoinAmount=float(input("How many coins do you have?"))
-    CoinTotal=float(Convert.Price)*CoinAmount
+    CoinTotal=float(convert.Price)*CoinAmount
     FinalOutput = float(CoinTotal/DuinoPrice) #Floats the CoinTotal, Divides the CoinTotal by the DuinoPrice and floats it.
     print('You would have', FinalOutput, 'duino-coin\n')
 
-def NoSupport():
+def nosupport():
     print("Currency is not currently supported, open an issue to get it added.")
 
 
@@ -99,11 +99,11 @@ while True:
                 ID = option['id']
                 URL = option['url']
                 response = requests.get(URL)
-                Convert(ID)
-                CalculationTo(ID)
+                convert(ID)
+                calculationto(ID)
                 break  
         else:
-            NoSupport()
+            nosupport()
 
     elif Option == '2':
         Currency=input("What currency do you want to convert from?")
@@ -113,11 +113,11 @@ while True:
                 ID = option['id']
                 URL = option['url']
                 response = requests.get(URL)
-                Convert(ID)
-                CalculationFrom()
+                convert(ID)
+                calculationfrom()
                 break
         else:
-            NoSupport()
+            nosupport()
             
     elif Option == '3':
         quit()
