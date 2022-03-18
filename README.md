@@ -1,6 +1,8 @@
 # Duinocoin-Convertor
 
-This is a fan made project, it has no relation to the duino-coin team or the [main repository](https://github.com/revoxhere/duino-coin). This program is a simple program which converts to and from duino-coin, using the prices from the [coingecko api](https://www.coingecko.com/en/api/documentation).
+#### This is a fan made project, it has no relation to the duino-coin team or the [main repository](https://github.com/revoxhere/duino-coin). 
+
+This program lets you find out how much your duino-coin would be worth in other currencies and likewise other currencies in duino coin. The prices of other currencies are pulled from the [coingecko api](https://www.coingecko.com/en/api/documentation) and the duino-coin price is pulled from the [duino-coin api](https://github.com/revoxhere/duco-rest-api).
 
 Any PR or issue's are welcome, feel free to contribute.
 
