@@ -1,3 +1,3 @@
 colorama==0.4.6
 requests==2.32.0
-ujson==5.9.0
+ujson==5.10.0
