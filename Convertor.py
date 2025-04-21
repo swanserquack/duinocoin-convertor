@@ -6,15 +6,13 @@
 #######################################################
 
 import requests
-import colorama
 import ujson
 import filecmp
 import os
 import shutil
 from os import path, mkdir
 from pathlib import Path
-from colorama import init
-from colorama import Fore, Back, Style
+from colorama import init, Fore, Back, Style
 
 init()
 
